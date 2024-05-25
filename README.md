@@ -10,6 +10,14 @@ Para mais informações, estarei deixando o link na seção *Links*
 
 Link com projeto corrigido para comparações de código na seção *Links*
 
+## Versions
+
+### V1.0
+
+- Criado uma mensagem de boas vindas e um input para coletar o nome do usuário.
+- Criado menu com opções Depositar, Sacar, Exibir extrato e sair.
+- Adicionado a função **Sleep** da biblioteca **Time** para dar um pause depois de cada comando.
+
 ## Funcionalidades
 
 - **Depositar:** Permite que você deposite dinheiro na sua conta.
