@@ -62,6 +62,7 @@ def sacar(*, saldo, valor, extrato, limite, numero_saques, limite_saques):
               sleep(1)
           else:
               saldo -= valor
+              numero_saques += 1
               print("Realizando saque, aguarde...")
               sleep(2)
               extrato += f"Saque de R${valor:.2f}\n"
@@ -72,7 +73,7 @@ def sacar(*, saldo, valor, extrato, limite, numero_saques, limite_saques):
       else:
           print("Valor inválido! Tente novamente.")
           sleep(1)
-      return saldo, extrato
+      return saldo, extrato, numero_saques, limite_saques
 
 # Função exibir extrato
 def exibir_extrato(saldo, /, *, extrato):
@@ -105,7 +106,7 @@ def main():
         elif opcao == "2":
             valor = float(input("Digite o valor a ser sacado: R$"))
             
-            saldo, extrato = sacar(saldo=saldo, valor=valor, extrato=extrato, limite=limite, numero_saques=numero_saques, limite_saques=LIMITE_SAQUES,)
+            saldo, extrato, numero_saques, LIMITE_SAQUES = sacar(saldo=saldo, valor=valor, extrato=extrato, limite=limite, numero_saques=numero_saques, limite_saques=LIMITE_SAQUES,)
         
         elif opcao == "3":
             exibir_extrato(saldo, extrato=extrato)
