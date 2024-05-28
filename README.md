@@ -18,6 +18,19 @@ Link com projeto corrigido para comparações de código na seção *Links*
 - Criado menu com opções Depositar, Sacar, Exibir extrato e sair.
 - Adicionado a função **Sleep** da biblioteca **Time** para dar um pause depois de cada comando.
 
+
+### V2.0
+
+- Código completamente refeito para melhorias.
+- Removido o input parar coletar o nome de usuário no inicio do programa (será criado um sistema melhor).
+- Removido blocos de códigos **depositar**, **sacar** e **exibir extrato** .
+- Criado as funções **menu** **depositar**, **sacar** e **exibir extrato** e a função principal **main** para melhorar a leitura e compreensão do código.
+- Alterado o menu com adições de novas funções: **Nova conta**, **Novo usuário** e **Listar contas**(OBS: ainda será implementada essas funções)
+
+**OBS:** Posso ter feito mais alterações, porém, talvez eu tenha esquecido de colocar rs. O código ainda contém alguns bugs por ter sido totalmente refeito e que pretendo resolver logo para deixar o código ok para ser executado.
+
+**OBS 2:** Como já mencionei, estou aprendendo e usando este projeto para treinamento e aprendizado então pode ser que certos trechos eu possa ter 'colado' do repositório oficial de onde estou estudando. Mas sempre buscando alterar uma coisinha aqui ou ali.
+
 ## Funcionalidades
 
 - **Depositar:** Permite que você deposite dinheiro na sua conta.
