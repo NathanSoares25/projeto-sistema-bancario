@@ -48,6 +48,9 @@ Link com projeto corrigido para comparações de código na seção *Links*
 - **Sacar:** Permite que você retire dinheiro da sua conta. Obs: Existe um limite diário de 3 saques, e o usuário pode sacar até 500, caso passe esse valor a operação é negada.
 - **Exibir Extrato:** Mostra o extrato da sua conta, incluindo transações passadas.
 - **Sair:** Encerra o aplicativo.
+- **Criar usuário:** Cria um novo usuário.
+- **Criar conta:** Cria uma nova conta.
+- **Listar contas:** Lista todas as contas criadas.
 
 ## Contribuindo
 
