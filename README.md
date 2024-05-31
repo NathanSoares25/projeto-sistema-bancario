@@ -35,6 +35,13 @@ Link com projeto corrigido para comparações de código na seção *Links*
 
 - Corrigido o bug onde o limite de saque diário não estava sendo contabilizado.
 
+### V2.1.1
+
+- Adicionado as novas funções **Criar usuário**, **Criar conta** e **Listar contas**
+- **Criar usuário:** O usuário primeiramente precisar criar um usário para depois ter permissão para criar uma conta.
+- **Criar conta:** Após ter criado o usuário, será solicitado o CPF para a criação da conta, se o CPF constar na lista de usuário a conta será criada, se não, a operação irá indicar para criar um usuário primeiro.
+- **Listar contas:** Mostra uma lista de contas criadas.
+
 ## Funcionalidades
 
 - **Depositar:** Permite que você deposite dinheiro na sua conta.
