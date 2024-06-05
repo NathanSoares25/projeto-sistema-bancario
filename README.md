@@ -1,6 +1,6 @@
 # Nthbank - Sistema Bancário Simulado
 
-Bem-vindo ao Nthbank! Este é um sistema bancário simulado desenvolvido para fins educacionais e de aprendizado. Com o Nthbank, você pode simular operações bancárias básicas, como sacar, depositar, exibir extrato, criar usuário, criar conta e sair do aplicativo.
+Bem-vindo ao Nthbank! Este é um sistema bancário simulado desenvolvido para fins educacionais e de aprendizado. Com o Nthbank, você pode simular operações bancárias básicas, como sacar, depositar, exibir extrato, criar usuário, criar conta, listar contas e sair do aplicativo.
 
 ## Sobre o Projeto
 
@@ -50,13 +50,26 @@ Link com projeto corrigido para comparações de código na seção *Links*
 - Adição de histórico de transações em cada conta.
 - Implementação de classes abstratas para transações bancárias e métodos abstratos para registrar transações.
 
-### v3.1
+### V3.1
 - Correção de bugs na lógica de saque em contas correntes.
 - Adição de contagem de saques diários e verificação de limite de saques em contas correntes.
 - Melhoria na documentação e organização do código.
 - Adição de representação textual (__str__) para objetos da classe ContaCorrente.
 
 **Não Desista!:** POO pra mim ta sendo super complicado, não estou conseguindo entender tudo de primeira, já pensei em desistir pois não tava me sentindo confortável porque não estava entendendo o assunto(ainda to sem entender kkk). Então eu tive que ver a resolução do código do desafio, mas isso não vai me desanimar em tentar compreender o assunto e essa linguagem maravilhosa que eu amo. Não posso e não quero desistir de seguir a carreira dos meus sonhos! Então se você ler isso, não desista! A caminhada é dificil mas lá no futuro renderá bons resultados.
+
+### V4.0
+
+#### Mudanças na Classe ContaCorrente:
+- Antes: O método __init__ da classe ContaCorrente recebia parâmetros limite e limite_saques, mas o atributo limite estava sendo atribuído como self._limite e o atributo limite_saques estava sendo atribuído como self.limite_saques.
+- Depois: Foi corrigido para que os atributos limite e limite_saques sejam atribuídos corretamente como self._limite e self._limite_saques, respectivamente.
+
+#### Mudanças na Classe Historico:
+- Antes: A classe Historico estava definindo o atributo transacoes como uma lista vazia chamada _transacoes.
+- Depois: O nome do atributo foi corrigido para _transacoes para evitar colisão com o nome do método transacoes, que também retorna o histórico de transações.
+#### Outras Mudanças:
+- As importações foram organizadas para melhor legibilidade.
+- As mensagens de erro e sucesso foram padronizadas para melhor consistência no código.
 
 ## Funcionalidades
 
