@@ -1,6 +1,6 @@
 # Nthbank - Sistema Bancário Simulado
 
-Bem-vindo ao Nthbank! Este é um sistema bancário simulado desenvolvido para fins educacionais e de aprendizado. Com o Nthbank, você pode simular operações bancárias básicas, como sacar, depositar, exibir extrato e sair do aplicativo.
+Bem-vindo ao Nthbank! Este é um sistema bancário simulado desenvolvido para fins educacionais e de aprendizado. Com o Nthbank, você pode simular operações bancárias básicas, como sacar, depositar, exibir extrato, criar usuário, criar conta e sair do aplicativo.
 
 ## Sobre o Projeto
 
@@ -41,6 +41,22 @@ Link com projeto corrigido para comparações de código na seção *Links*
 - **Criar usuário:** O usuário primeiramente precisar criar um usário para depois ter permissão para criar uma conta.
 - **Criar conta:** Após ter criado o usuário, será solicitado o CPF para a criação da conta, se o CPF constar na lista de usuário a conta será criada, se não, a operação irá indicar para criar um usuário primeiro.
 - **Listar contas:** Mostra uma lista de contas criadas.
+
+### V3.0
+- Código **TOTALMENTE** refeito para aplicar os aprendizados em Programação Orientada a Objetos.
+- Implementação inicial das classes Cliente, PessoaFisica, Conta, ContaCorrente, Historico, Transacao, Saque, e Deposito.
+- Definição de métodos e propriedades para manipulação de contas bancárias, transações e clientes.
+- Implementação de lógica para realizar saques e depósitos em contas, verificando saldo disponível e limites.
+- Adição de histórico de transações em cada conta.
+- Implementação de classes abstratas para transações bancárias e métodos abstratos para registrar transações.
+
+### v3.1
+- Correção de bugs na lógica de saque em contas correntes.
+- Adição de contagem de saques diários e verificação de limite de saques em contas correntes.
+- Melhoria na documentação e organização do código.
+- Adição de representação textual (__str__) para objetos da classe ContaCorrente.
+
+**Não Desista!:**POO pra mim ta sendo super complicado, não estou conseguindo entender tudo de primeira, já pensei em desistir pois não tava me sentindo confortável porque não estava entendendo o assunto(ainda to sem entender kkk). Então eu tive que ver a resolução do código do desafio, mas isso não vai me desanimar em tentar compreender o assunto e essa linguagem maravilhosa que eu amo. Não posso e não quero desistir de seguir a carreira dos meus sonhos! Então se você ler isso, não desista! A caminhada é dificil mas lá no futuro renderá bons resultados.
 
 ## Funcionalidades
 
