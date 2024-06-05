@@ -56,7 +56,7 @@ Link com projeto corrigido para comparações de código na seção *Links*
 - Melhoria na documentação e organização do código.
 - Adição de representação textual (__str__) para objetos da classe ContaCorrente.
 
-**Não Desista!:**POO pra mim ta sendo super complicado, não estou conseguindo entender tudo de primeira, já pensei em desistir pois não tava me sentindo confortável porque não estava entendendo o assunto(ainda to sem entender kkk). Então eu tive que ver a resolução do código do desafio, mas isso não vai me desanimar em tentar compreender o assunto e essa linguagem maravilhosa que eu amo. Não posso e não quero desistir de seguir a carreira dos meus sonhos! Então se você ler isso, não desista! A caminhada é dificil mas lá no futuro renderá bons resultados.
+**Não Desista!:** POO pra mim ta sendo super complicado, não estou conseguindo entender tudo de primeira, já pensei em desistir pois não tava me sentindo confortável porque não estava entendendo o assunto(ainda to sem entender kkk). Então eu tive que ver a resolução do código do desafio, mas isso não vai me desanimar em tentar compreender o assunto e essa linguagem maravilhosa que eu amo. Não posso e não quero desistir de seguir a carreira dos meus sonhos! Então se você ler isso, não desista! A caminhada é dificil mas lá no futuro renderá bons resultados.
 
 ## Funcionalidades
 
