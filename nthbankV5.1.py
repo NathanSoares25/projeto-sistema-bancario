@@ -14,11 +14,11 @@ class ContasIterador:
         try:
             conta = self.contas[self.index]
             return f"""\
-            Agência:\t{conta.agencia}
-            Número:\t{conta.numero}
-            Titular:\t{conta.cliente.nome}
-            Saldo:\t\tR$ {conta.saldo:.2f}
-        """
+Agência:\t{conta.agencia}
+Número:\t{conta.numero}
+Titular:\t{conta.cliente.nome}
+Saldo:\t\tR$ {conta.saldo:.2f}
+"""
         except IndexError:
             raise StopIteration 
         finally:
@@ -30,8 +30,8 @@ class Cliente:
         self.contas = []  # Lista para armazenar as contas do cliente
         self.indice_conta = 0
 
-    def realizar_transacao(self, conta, transacao):
-        if len(conta.historico.transacoes_do_dia()) >= 2:
+    def realizar_transacao(self, conta, transacao, limite_diario=2):
+        if len(conta.historico.transacoes_do_dia()) >= limite_diario:
             print("\n### Você excedeu o número de transações permitidas para hoje! ###")
             return
         
@@ -97,13 +97,13 @@ class Conta:
         return False
             
     def depositar(self, valor):
-        if valor > 0:
-            self._saldo += valor  # Realiza o depósito adicionando o valor ao saldo
-            print("\n-> Depósito realizado com sucesso!")  # Mensagem de sucesso
-        
-        else:
+        if valor <= 0:
             print("\n-> Operação negada! O valor informado é inválido!")  # Mensagem de erro
             return False
+        
+        self._saldo += valor  # Realiza o depósito adicionando o valor ao saldo
+        print("\n-> Depósito realizado com sucesso!")  # Mensagem de sucesso
+        return True
 
 class ContaCorrente(Conta):
     def __init__(self, numero, cliente, limite=500, limite_saques=3):
@@ -235,10 +235,8 @@ def filtrar_cliente(cpf, clientes):
 
 def recuperar_conta_cliente(cliente):
     if not cliente.contas:
-        print("\n-> Você ainda não possui contas!")  # Mensagem de erro
-        return
+        return None 
     
-    # FIXME:
     return cliente.contas[0]
 
 @log_transacao
@@ -275,7 +273,11 @@ def sacar(clientes):
     if not conta:
         return
     
-    cliente.realizar_transacao(conta, transacao)
+    sucesso = cliente.realizar_transacao(conta, transacao)
+    if sucesso:
+        print("\n-> Saque realizado com sucesso!")  # Mensagem de sucesso
+    else:
+        print("\n@@@ Falha ao realizar o saque. Verifique seu saldo e limites. @@@")
 
 @log_transacao
 def exibir_extrato(clientes):
