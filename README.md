@@ -95,6 +95,21 @@ Link com projeto corrigido para comparações de código na seção *Links*
 ### Atualizações e Correções Menores:
 - Ajustes nos métodos sacar e depositar das classes Conta e ContaCorrente para refletir as novas regras de transação e histórico
 
+## V5.1
+### Indentação do Texto Formatado em ContasIterador
+- Alteração no método __next__ da classe ContasIterador, a string formatada estava com indentação extra.Foi essa indentação para que a saída seja formatada corretamente.
+
+### Lógica de Transações Diárias em Cliente
+- Na função realizar_transacao, a lógica limita a quantidade de transações diárias. Foi adicionado um parâmetro opcional para configurar esse limite (limite_diario).
+
+### Melhorias na Função recuperar_conta_cliente
+- Feito ajuste na função recuperar_conta_cliente para retornar **None** se o cliente não tiver conta, em vez de imprimir uma mensagem de erro diretamente.
+
+### Melhorias na Saída de Mensagens
+- Feita a Padronização e melhoria das mensagens de sucesso e erro para uma experiência de usuário mais consistente e clara.
+### Encapsulamento e Validação Adicional
+- Implementação de validações adicionais, para garantir que valores negativos não sejam aceitos em transações.
+
 ## Funcionalidades
 
 - **Depositar:** Permite que você deposite dinheiro na sua conta.
