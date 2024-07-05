@@ -71,6 +71,30 @@ Link com projeto corrigido para comparações de código na seção *Links*
 - As importações foram organizadas para melhor legibilidade.
 - As mensagens de erro e sucesso foram padronizadas para melhor consistência no código.
 
+### V5.0
+### Adição do Iterador de Contas:
+- **Classe Adicionada:** ContasIterador
+- **Finalidade:** Permite iterar sobre uma lista de contas e exibir informações formatadas de cada conta.
+
+### Controle de Limite de Transações Diárias para Clientes:
+- **Método Adicionado:** realizar_transacao na classe Cliente
+- **Finalidade:** Limita o número de transações diárias que um cliente pode realizar, exibindo uma mensagem de erro caso exceda o limite.
+
+### Relatório de Transações por Tipo no Histórico:
+- **Método Adicionado:** gerar_relatorio na classe Historico
+- **Finalidade:** Permite gerar um relatório das transações filtrando por tipo (saque ou depósito).
+
+### Filtragem de Transações do Dia no Histórico:
+- **Método Adicionado:** transacoes_do_dia na classe Historico
+- **Finalidade:** Retorna as transações realizadas no dia atual, baseando-se na data registrada nas transações.
+
+### Decorator para Logging de Transações:
+- **Decorator Adicionado:** log_transacao
+- **Finalidade:** Registra em log o momento e o tipo de transação realizada.
+
+### Atualizações e Correções Menores:
+- Ajustes nos métodos sacar e depositar das classes Conta e ContaCorrente para refletir as novas regras de transação e histórico
+
 ## Funcionalidades
 
 - **Depositar:** Permite que você deposite dinheiro na sua conta.
