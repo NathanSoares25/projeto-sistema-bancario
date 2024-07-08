@@ -114,7 +114,7 @@ Link com projeto corrigido para comparações de código na seção *Links*
 
 ### Adicionado registro de log de transações
 - Implementada função log_transacao para registrar todas as transações realizadas no sistema.
-- Cada transação agora é registrada no arquivo log.txt, incluindo a data e hora da execução, o nome da função, os argumentos e o resultado retornado (se houver).
+- Cada transação agora é registrada no arquivo log.txt, incluindo a data e hora da execução, o nome da função, os argumentos e o resultado retornado.
 
 ## Funcionalidades
 
